@@ -13,11 +13,16 @@
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
 
-        <Image Source="bananas.png" Aspect="AspectFit" WidthRequest="100" HeightRequest="100"></Image>
+        <Image 
+            Source="bananas.png" 
+            Aspect="AspectFit" 
+            WidthRequest="200" 
+            HeightRequest="200"/>
 
         <Button x:Name="banana2" 
             Text="Voce gosta de banana?"
             HorizontalOptions="Fill"
-            Clicked="Banana_Clicked"></Button>
+            Clicked="Banana_Clicked"/>
+        
     </VerticalStackLayout>
 </ContentPage>
