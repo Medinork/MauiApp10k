@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp10k.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a hovercraft number nine" />
+
+            <Label
+                x:Name="lblBemVindo"
+                Text="Turma ADS 5 Fase"
+                Style="{StaticResource Headline}"
+                BackgroundColor="ForestGreen"
+                FontSize="25"
+                TextColor="Blue"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label
+                x:Name="lblTeste"
+                TextColor="Red"
+                BackgroundColor="Aqua"
+                Text="Teste com MAUI App"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="ME APERTE" 
+                BackgroundColor="Chocolate"
+                TextColor="GreenYellow"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+            
+            <Button
+                x:Name="CounterBtn2"
+                Text="ME APERTE" 
+                BackgroundColor="OrangeRed"
+                TextColor="LightGreen"
+                SemanticProperties.Hint="diminui a contagem"
+                Clicked="OnCounterClicked2"
+                HorizontalOptions="Fill" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

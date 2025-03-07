@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp10k.Banana"
+             Title="Banana">
+    <VerticalStackLayout
+    Padding="30"
+    Spacing="25">
+
+        <Label 
+        Text="BANANA"
+        TextColor="Yellow"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+
+        <Image Source="bananas.png" Aspect="AspectFit" WidthRequest="100" HeightRequest="100"></Image>
+
+        <Button x:Name="banana2" 
+            Text="Voce gosta de banana?"
+            HorizontalOptions="Fill"
+            Clicked="Banana_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>
